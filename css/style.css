@@ -12,13 +12,20 @@
 #main header {
   width: 100%;
   height: 10em;
-  background: #32323200;
+  background: #323232;
 }
-#main #container-flex {
+#main .container-flex {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: inherit;
   width: 100%;
+  height: 12em;
+  padding: 1.5em;
   color: #fff;
 }
 
