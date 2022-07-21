@@ -3,20 +3,25 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #main {
   position: absolute;
   width: 100%;
-  height: 800px;
   background: #222222;
 }
-#main header {
+
+header {
   width: 100%;
   height: 10em;
   background: #323232;
 }
-#main .container-flex {
-  -moz-box-sizing: border-box;
+
+.container-flex {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: flex;
   flex-flow: column nowrap;
@@ -27,6 +32,59 @@
   height: 12em;
   padding: 1.5em;
   color: #fff;
+}
+
+.gallery-wrapper {
+  position: relative;
+  width: 100%;
+  height: 750px;
+}
+.gallery-wrapper .index-gallery-left-first {
+  width: 66.66%;
+  height: 40em;
+  float: left;
+}
+.gallery-wrapper .index-gallery-right-first {
+  width: 66.66%;
+  height: 40em;
+  float: right;
+}
+.gallery-wrapper .index-gallery-left {
+  width: 33.34%;
+  height: 20em;
+  float: left;
+}
+.gallery-wrapper .index-gallery-right {
+  width: 33.34%;
+  height: 20em;
+  float: right;
+}
+
+.see-more {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 15em;
+  padding: 10px;
+  background: #0e0c0c;
+}
+.see-more a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 2px solid #faebeb;
+  color: #faebeb;
+  background-color: transparent;
+  transition: 0.1s background-color linear, 0.1s color linear;
+}
+.see-more a:hover {
+  background: #faebeb;
+  color: #0e0c0c;
 }
 
 /*# sourceMappingURL=style.css.map */
