@@ -103,3 +103,18 @@ header {
     }
 
 }
+
+.welcome-gif {
+    
+    position: relative;
+    height: 15em;
+
+    .background-gif {
+        @include fit();
+        position: absolute;
+        background-image: url('https://i.imgur.com/8JZcdLd.gif');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+}

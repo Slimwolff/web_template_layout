@@ -87,4 +87,17 @@ header {
   color: #0e0c0c;
 }
 
+.welcome-gif {
+  position: relative;
+  height: 15em;
+}
+.welcome-gif .background-gif {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("https://i.imgur.com/8JZcdLd.gif");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 /*# sourceMappingURL=style.css.map */

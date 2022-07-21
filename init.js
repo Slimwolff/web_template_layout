@@ -1,9 +1,3 @@
-window.onload = function() {
-
-    colorGallery();
-}
-
-
 let gallery = document.querySelector('.gallery-wrapper');
 
 colors = ['e8f3fe','cce4fd','a4cefc','77b6fb','4b9cf9','2382f7','057af0','196bde','1557c0'];
@@ -18,3 +12,9 @@ function colorGallery(){
         count++;
     }
 }
+
+
+window.onload = function() {
+    colorGallery();
+}
+
