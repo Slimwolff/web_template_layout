@@ -1,4 +1,5 @@
 let gallery = document.querySelector('.gallery-wrapper');
+let navHead = document.querySelectorAll('.header-nav-inner');
 
 colors = ['e8f3fe','cce4fd','a4cefc','77b6fb','4b9cf9','2382f7','057af0','196bde','1557c0'];
 
@@ -13,8 +14,14 @@ function colorGallery(){
     }
 }
 
+function colorHeadNav() {
+    for(let i=0; i<navHead.length; i++) {
+        navHead[i].style.backgroundColor = "#"+colors[i];
+    }
+}
 
 window.onload = function() {
     colorGallery();
+    // colorHeadNav()
 }
 
