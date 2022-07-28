@@ -43,10 +43,9 @@ body {
 }
 
 #main {
-    position: absolute;
+    // position: absolute;
     width: 100%;
     background: #222222;
-
 }
 
 header { 
@@ -68,6 +67,7 @@ header {
         }
         .header-nav-inner {
             width: 33.3%;
+            flex: 1 1 auto;
             // height: 5em;
 
             .header-menu-inner {
@@ -124,7 +124,7 @@ header {
     position: relative;
     width: 100%;
     height: 750px;
-
+    background: #fff;
     .index-gallery-left-first {
         @include item-gallery-1();
         float: left;
@@ -158,12 +158,14 @@ header {
 .welcome-gif {
     
     position: relative;
-    height: 13.5em;
+    height: 30em;
 
     .background-gif {
-        @include fit();
-        position: absolute;
-        background-image: url('https://i.imgur.com/8JZcdLd.gif');
+        // @include fit();
+        position: relative;
+        padding-top: 240px;
+        padding-bottom: 240px;
+        background-image: url('https://images.squarespace-cdn.com/content/v1/5746048bd210b892223e44a4/1464630395739-VNLW59NUIYRE6SW0QKTP/ezgif.com-gif-maker+%284%29.gif?format=1500w');
         background-attachment: fixed;
         background-size: cover;
     }
@@ -202,8 +204,9 @@ header {
 
 .text-core {
     font-size: 18px;
-    line-height: 2.33em;
+    line-height: 2.50em;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: .15em;
 }
 
@@ -237,6 +240,13 @@ header {
     }
 }
 
+.nc-effect-opacity{
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+    &:hover{
+        opacity: .95;
+    }
+}
 @media screen and (max-width: 640px) {
     .gallery-wrapper {
         position: relative;

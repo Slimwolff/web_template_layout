@@ -17,7 +17,6 @@ body {
 }
 
 #main {
-  position: absolute;
   width: 100%;
   background: #222222;
 }
@@ -48,6 +47,7 @@ header .header-nav .header-nav-right {
 }
 header .header-nav .header-nav-inner {
   width: 33.3%;
+  flex: 1 1 auto;
 }
 header .header-nav .header-nav-inner .header-menu-inner {
   margin: -0.618em -0.618em;
@@ -100,6 +100,7 @@ header .header-nav a .header-branding-logo {
   position: relative;
   width: 100%;
   height: 750px;
+  background: #fff;
 }
 .gallery-wrapper .index-gallery-left-first {
   width: 66.66%;
@@ -138,13 +139,13 @@ header .header-nav a .header-branding-logo {
 
 .welcome-gif {
   position: relative;
-  height: 13.5em;
+  height: 30em;
 }
 .welcome-gif .background-gif {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-image: url("https://i.imgur.com/8JZcdLd.gif");
+  position: relative;
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5746048bd210b892223e44a4/1464630395739-VNLW59NUIYRE6SW0QKTP/ezgif.com-gif-maker+%284%29.gif?format=1500w");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -185,8 +186,9 @@ header .header-nav a .header-branding-logo {
 
 .text-core {
   font-size: 18px;
-  line-height: 2.33em;
+  line-height: 2.5em;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 0.15em;
 }
 
@@ -220,6 +222,14 @@ header .header-nav a .header-branding-logo {
 .btn-primary:hover {
   background: #faebeb;
   color: #0e0c0c;
+}
+
+.nc-effect-opacity {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.nc-effect-opacity:hover {
+  opacity: 0.95;
 }
 
 @media screen and (max-width: 640px) {
