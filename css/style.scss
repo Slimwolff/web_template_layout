@@ -199,6 +199,30 @@ header {
     }
 }
 
+
+
+footer {
+    @include box-sizing();
+    width: 100%;
+    padding: 150px 30px;
+    background-color: #121212;
+
+    .index-gallery-container {
+        width: 100%;
+        padding: 20px 100px;
+
+        .index-gallery-content {
+            width: 33.3%;
+            height: 8.5em;
+            float: left;
+        }
+    }
+    
+}
+
+
+
+
 .mt-8 {
     margin-top: 80px;
 }
@@ -278,3 +302,4 @@ header {
         }
     }
 }
+

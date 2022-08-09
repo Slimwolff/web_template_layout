@@ -177,6 +177,24 @@ header .header-nav a .header-branding-logo {
   color: rgba(244, 236, 236, 0.8);
 }
 
+footer {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 150px 30px;
+  background-color: #121212;
+}
+footer .index-gallery-container {
+  width: 100%;
+  padding: 20px 100px;
+}
+footer .index-gallery-container .index-gallery-content {
+  width: 33.3%;
+  height: 8.5em;
+  float: left;
+}
+
 .mt-8 {
   margin-top: 80px;
 }

@@ -1,4 +1,4 @@
-let gallery = document.querySelector('.gallery-wrapper'), navHead = document.querySelectorAll('.header-nav-inner');
+let gallery = document.querySelector('.gallery-wrapper'), footer = document.querySelectorAll('.index-gallery-content');
 
 const COLORS = ['e8f3fe','cce4fd','a4cefc','77b6fb','4b9cf9','2382f7','057af0','196bde','1557c0'];
 
@@ -45,7 +45,7 @@ function colorObjects(arrayObj){
 
 window.onload = () => {
 
-    colorObjects([gallery]);
+    colorObjects([gallery,footer]);
     //colorGallery();
     //colorHeadNav();
 }
