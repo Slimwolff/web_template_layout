@@ -181,15 +181,21 @@ footer {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  position: relative;
   width: 100%;
-  padding: 150px 30px;
   background-color: #121212;
 }
-footer .index-gallery-container {
+footer .footer-index {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+}
+footer .footer-index .index-gallery-container {
   width: 100%;
   padding: 20px 100px;
 }
-footer .index-gallery-container .index-gallery-content {
+footer .footer-index .index-gallery-container .index-gallery-content {
   width: 33.3%;
   height: 8.5em;
   float: left;

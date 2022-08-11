@@ -203,18 +203,25 @@ header {
 
 footer {
     @include box-sizing();
+    position: relative;
     width: 100%;
-    padding: 150px 30px;
     background-color: #121212;
 
-    .index-gallery-container {
-        width: 100%;
-        padding: 20px 100px;
+    .footer-index {
+        @include box-sizing();
+        padding: 20px;
 
-        .index-gallery-content {
-            width: 33.3%;
-            height: 8.5em;
-            float: left;
+
+
+        .index-gallery-container {
+            width: 100%;
+            padding: 20px 100px;
+    
+            .index-gallery-content {
+                width: 33.3%;
+                height: 8.5em;
+                float: left;
+            }
         }
     }
     
