@@ -124,14 +124,11 @@ header {
     position: relative;
     width: 100%;
     height: 750px;
-    background: #fff;
     transition: all 0.5s ease-in-out;
 
     .index-gallery-left-first {
         @include item-gallery-1();
-        
         float: left;
-        
     }
 
     .index-gallery-right-first {
@@ -198,7 +195,29 @@ header {
         }
     }
 }
+.welcome-quote {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5746048bd210b892223e44a4/1488431543080-DO9LY56CCW26V08P9KX2/bg+site.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 
+
+    .nav-index {
+        @include box-sizing();
+        padding: 150px 50px;
+
+
+        .nav-index-text {
+            padding: 0 20px;
+
+            p {
+                margin: 10px 0;
+                font-size: 13px;
+                text-align: center;
+                color: rgba(255,255,255,.8);
+            }
+        }
+    }
+}
 
 
 footer {

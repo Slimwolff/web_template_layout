@@ -48,9 +48,6 @@ function colorObjects(array){
 
 
 window.onload = () => {
-
     colorObjects([gallery,footer]);
-    //colorGallery();
-    //colorHeadNav();
 }
 
