@@ -115,11 +115,31 @@ header {
         z-index: 1;
         background: #3d3d3d;
 
+        .header-side-menu {
+            @include box-sizing();
+            @include flex($flow: column nowrap, $justify: space-between);
+            min-width: 300px;
+            width: 375px;   
+            padding: 25px;
+
+
+            .header-menu-item {
+                padding: 20px 25px;    
+                font-family: 'Barlow Condensed', sans-serif;
+                font-size: 34px;    
+                color: #fff;
+                text-decoration: none;
+                letter-spacing: 0.04em;
+            }
+
+        }
+
         .header-side-button {
             width: 65px;
             height: 65px;
             background: #0297ff;
         }
+        
     }    
 }
 

@@ -91,6 +91,27 @@ header .header-side-nav {
   z-index: 1;
   background: #3d3d3d;
 }
+header .header-side-nav .header-side-menu {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: inherit;
+  min-width: 300px;
+  width: 375px;
+  padding: 25px;
+}
+header .header-side-nav .header-side-menu .header-menu-item {
+  padding: 20px 25px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 34px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
 header .header-side-nav .header-side-button {
   width: 65px;
   height: 65px;
