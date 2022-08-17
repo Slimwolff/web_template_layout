@@ -24,6 +24,7 @@ body {
 }
 
 header {
+  position: relative;
   width: 100%;
   height: 11em;
   background: #323232;
@@ -75,6 +76,25 @@ header .header-nav .header-nav-inner .header-menu-inner .menu-item-active {
 header .header-nav a .header-branding-logo {
   max-width: 420px;
   width: 100%;
+}
+header .header-side-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background: #3d3d3d;
+}
+header .header-side-nav .header-side-button {
+  width: 65px;
+  height: 65px;
+  background: #0297ff;
 }
 
 .container-flex {
