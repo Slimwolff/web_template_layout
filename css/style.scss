@@ -129,7 +129,6 @@ header {
         stroke-width: 2 !important;
     }
     .header-side-nav {
-        
         @include flex($flow: row nowrap, $align-content: stretch);
         visibility: hidden;
         position: fixed;
