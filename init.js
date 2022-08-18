@@ -1,4 +1,5 @@
-let gallery = document.querySelector('.gallery-wrapper'), footer = document.querySelector('.footer-gallery');
+let gallery = document.querySelector('.gallery-wrapper'), footer = document.querySelector('.footer-gallery'),
+menu = document.getElementById('mobile-menu'), closeIcon = document.querySelectorAll('.close-icon');
 
 const COLORS = ['#e8f3fe','#cce4fd','#a4cefc','#77b6fb','#4b9cf9','#2382f7','#057af0','#196bde','#1557c0'];
 
@@ -45,6 +46,31 @@ function colorObjects(array){
         }
     }
 }
+
+
+function toggleMenu() {
+    document.body.classList.toggle('overflow-hidden');
+    menu.classList.toggle('menu-active');
+    for(let i=0; i<closeIcon.length; i++) {
+        closeIcon[i].classList.toggle('icon-active');
+    }
+
+}
+
+
+function getCordsSpaceBetween(height,heightObj,elementCount) {
+
+    let array = [];
+    let space = height/elementCount;
+    // let pos = (space/2)-((heightObj-2)/2);
+    for(let i=1; i<=elementCount; i++) {
+        
+        array.push(((space*i)-(space/2))-(heightObj/2));
+    }
+    return array;
+}
+
+
 
 
 window.onload = () => {
